@@ -1,0 +1,55 @@
+{
+  "name": "embassies-list-of-russia",
+  "version": "0.0.1",
+  "dependencies": {
+    "almond": "^0.3.0",
+    "requirejs-text": "2.0.13",
+    "requirejs-domready": "2.0.1",
+    "jquery": "^2.1.1",
+    "underscore": "^1.7.0",
+    "backbone": "^1.1.2",
+    "normalize.css": "^3.0.2",
+    "fontawesome": "^4.2.0",
+    "spin.js": "^2.0.1",
+    "velocity": "^1.1.0",
+    "mustache.js": "~1.1.0",
+    "jquery-mobile-bower": "~1.4.5"
+  },
+  "devDependencies": {
+    "sinon": "http://sinonjs.org/releases/sinon-1.12.2.js"
+  },
+  "overrides": {
+    "requirejs-text": {
+      "main": [
+        "text.js"
+      ]
+    },
+    "requirejs-domready": {
+      "main": [
+        "domReady.js"
+      ]
+    },
+    "modernizr": {
+      "main": [
+        "modernizr.js"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js",
+        "dist/fonts/glyphicons-halflings-regular.eot",
+        "dist/fonts/glyphicons-halflings-regular.ttf",
+        "dist/fonts/glyphicons-halflings-regular.woff",
+        "dist/fonts/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "jquery-mobile-bower": {
+      "main": [
+        "js/jquery.mobile-1.4.5.js",
+        "css/jquery.mobile-1.4.5.css",
+        "css/images/**"
+      ]
+    }
+  }
+}

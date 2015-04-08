@@ -1,0 +1,29 @@
+{{> head}}
+<div class="header" data-role="header" data-position="fixed" role="banner">
+    <a href="#" class="js__button-back ui-icon-left ui-btn-icon-left ui-btn-left ui-btn ui-btn-inline ui-corner-all ui-mini" data-role="button" role="button">Назад</a>
+    <h1 class="title js__title">{{title}}</h1>
+    <a href="#rightpanel" class="js__panel ui-icon-info ui-btn-icon-notext ui-btn-right ui-btn ui-btn-inline ui-corner-all ui-mini" data-role="button" role="button"></a>
+</div>
+<div id="main" data-role="page">
+    <div data-role="content">
+        <form class="ui-filterable">
+            <input id="rich-autocomplete-input" data-type="search" placeholder="Название страны" />
+        </form>
+        <ul data-role="listview" data-filter="true" data-inset="true" data-input="#rich-autocomplete-input">
+            {{#ambassies}}
+                <li data-filtertext="{{title}}"><a href="#country?{{index}}">{{title}}</a></li>
+            {{/ambassies}}
+        </ul>
+    </div>
+    <div id="rightpanel1" data-role="panel" data-position-fixed="true" data-theme="b" data-position="right" data-display="push">
+        {{> rightpanel}}
+    </div>
+</div>
+<div class="country" id="country" data-role="page">
+    <div class="js__content" data-role="content">
+    </div>
+    <div id="rightpanel2" data-role="panel" data-position-fixed="true" data-theme="b" data-position="right" data-display="push">
+        {{> rightpanel}}
+    </div>
+</div>
+{{> footer}}
